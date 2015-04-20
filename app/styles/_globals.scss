@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $white;
+  font-family: $font-stack;
+  color: $black;
+  max-width: 960 / 16 * 1em;
+  margin: 4em auto;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #grey-light;
+  color: $black;
+  padding: 0.2em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  @include clearfix;
+}
+
+.post-link {
+  @include clearfix;
+  margin: 0;
+  padding-top: 1em;
+}
+
+.muse-img {
+  border: 1px solid #ccc;
+}
+.visuallyhidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
